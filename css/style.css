@@ -4,16 +4,26 @@
 body {
     margin: 0;
 }
+h1{
+    margin-top: 10px;
+    color: rgb(0, 11, 128);
+}
+h2{
+    color: rgb(0, 11, 128);
+    font-size: 25px;;
+}
+/*----------------classes---------------------*/
 .form-container {
     display: flex;
     width: 100%;
     height: 100vh;
+    padding: 10px 10px;
     align-items: center;
-    justify-content: flex-end;
-    background-color: #6687c9;
+    justify-content: space-between;
+    background-color: #5b7bbc;
     color: #e5ecf3;
     font-size: 24px;
-    border: 1px solid black;
+    border: 15px solid rgb(150, 42, 42);
     gap: 10px;
   }
 .form {
@@ -22,58 +32,95 @@ body {
     width: 100%;
     height: 80vh;
     padding: 15px 20px;
-    margin-right: 150px;
+    /* margin-right: 150px; */
+    margin-left: 150px;
     font-family:'Courier New', Courier, monospace;
 }
 
-.select {
-    font-size: 25px;
-}
-
-h1{
-    color: rgb(0, 11, 128);
-}
-
-.location{
-    border: #065193;
-    border-width: 5px;
-    border-style: solid;
-}
-textarea {
-    resize: none;
-}
-
-input, textarea, select {
-	box-sizing: border-box;
+/*---------------- ID---------------------*/
+#name, #age, #email, #message,#password, #submit-button {
+    box-sizing: border-box;
 	width: 100%;
     min-height: 40px;
 	margin-bottom: 10px;
-	border: 2px solid rgb(0, 11, 128);
-	background-color: rgba(9, 107, 104, 0.7);
+	border: 2px solid rgb(5, 13, 97);
+	background-color: rgba(6, 6, 6, 0.7);
     border-radius: 10px;
 	padding-left: 7px;
-    color: white;
+    color: rgb(232, 216, 216);
     font-size: 16px;
     cursor: pointer;
-}
-.label{
-    display: block;
-    position: relative;
-    bottom: -2px;
 }
 #submit-button {
     width: 100%;
     height: 55px;
     margin-top: 50px;
-    font-size: 20px;
-
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
 }
+/*--------------------textarea, select, label------------------*/
+textarea, select {
+	box-sizing: border-box;
+	width: 100%;
+    min-height: 40px;
+	margin-bottom: 10px;
+	border: 2px solid rgb(5, 13, 97);
+	background-color: rgba(6, 6, 6, 0.7);
+    border-radius: 10px;
+	padding-left: 7px;
+    color: rgb(232, 216, 216);
+    font-size: 16px;
+    cursor: pointer;
+} 
+ label{
+    display: block;
+    position: relative;
+    bottom: -2px; 
+}  
+select {
+    font-size: 20px;
+} 
+textarea {
+    resize: none;
+}
+/* ---------checkbox--------------------- */
+.input::placeholder, .textarea::placeholder {
+    opacity: 0;
+    font-size: 20px;
+}
+.checkbox-container {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+
+#checkbox-input {
+    margin: 0;
+    margin-left: 5px;
+}
+
+
+/*------------------img--------------*/
+img {
+     width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 100px;
+}
+/*----------hover and special effects---------*/
+
 #submit-button:hover {
     background-color: rgb(149, 91, 91);
 }
-.input-field::placeholder, .textarea::placeholder {
-    color:aquamarine;
-    opacity: 0;
-    font-size: 30px;
+input:hover {
+    background-color: rgb(149, 91, 91);
 }
+#checkbox-input:hover {
+    cursor: pointer;
+}
+/* .location{
+    border: #065193;
+    border-width: 5px;
+    border-style: solid;
+} */
 
