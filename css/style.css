@@ -6,15 +6,15 @@ body {
 }
 .form-container {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: flex-end;
-    background-color: #8c8ce2;
+    background-color: #6687c9;
     color: #c9d4df;
-    font-family: Tahoma;
     font-size: 16px;
     border: 1px solid black;
+    gap: 10px;
   }
 .form {
     display: flex;
@@ -23,21 +23,42 @@ body {
     height: 80vh;
     padding: 15px 20px;
     margin-right: 150px;
-
-
+    font-family:'Courier New', Courier, monospace;
 }
+
 h1{
-    color: purple;
-}
-
-textarea {
-    resize: nine;
-    border-radius: 10px;
-    height: 40px;
+    color: rgb(0, 11, 128);
 }
 
 .location{
     border: #065193;
     border-width: 5px;
     border-style: solid;
+}
+input, textarea {
+	box-sizing: border-box;
+	width: 100%;
+    min-height: 40px;
+	margin-bottom: 10px;
+	border: 2px solid rgb(0, 11, 128);
+	background-color: rgba(9, 107, 104, 0.7);
+    border-radius: 10px;
+	padding-left: 7px;
+    color: white;
+    font-size: 16px;
+}
+.label{
+    display: block;
+    position: relative;
+    bottom: -2px;
+}
+#submit-button {
+    width: 100%;
+    height: 55px;
+    margin-top: 50px;
+    font-size: 20px;
+
+}
+#submit-button:hover {
+    background-color: rgb(117, 109, 109);
 }
