@@ -1,12 +1,43 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    width: 100%;
+    margin: 0;
+}
+.form-container {
+    display: flex;
+    width: 100vw;
     height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
     background-color: #8c8ce2;
     color: #c9d4df;
     font-family: Tahoma;
     font-size: 16px;
+    border: 1px solid black;
   }
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    padding: 15px 20px;
+    margin-right: 150px;
 
+
+}
 h1{
     color: purple;
+}
+
+textarea {
+    resize: nine;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.location{
+    border: #065193;
+    border-width: 5px;
+    border-style: solid;
 }

@@ -6,21 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="container">
     <!--Full name, email, message, password, submit button, image at one side-->
-    <h1>Petition for  </h1>
-    <h2>Sign up here:</h2>
-    <fieldset>
-        <label for="first-name"> Enter your first name: <input id="first-name" type="text" required/></label>
-        <label for="last-name"> Enter your last name: <input id="last-name" type="text" required/></label>
-        <label for="email"> Enter your last name: <input id="email" type="email" required/></label>
-        <label for="password"> Create a new password: <input id="password" type="password" required min="8" max="15"/></label>
-       
-
-        <input></input>
-        submit
-        <input></input>
-    </fieldset>
+<main class="form-container">
+    <form class="form location" autocomplete="off">
+        <h1 class="form-title">Scuba Diving course </h1>
+    <h2 class="info">"Life is better uuuunder the sea."</h2>
+        <label for="first-name"> Enter your name: <input id="name" type="text" required/></label>
+        <label for="age"> Enter your age: <input id="age" type="number" required/></label>
+        <label for="email"> Enter your email: <input id="email" type="email" required/></label>
+        <label for="password"> Create a new password: <input id="password" type="password" required minlength="8" maxlength="15"/></label>
+        <textarea name="message" id="message" cols="2" rows="2"></textarea>
+        <input id="submit-button" type="submit" value="Submit"></input>
+    </form>
+</main>
 
 
 </body>
