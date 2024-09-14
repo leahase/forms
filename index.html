@@ -10,34 +10,39 @@
     <!--Full name, email, message, password, submit button, image at one side-->
 <main class="form-container">
     <form class="form location" autocomplete="off">
-        <h1 class="form-title">Scuba Diving course </h1>
-    <h2 class="info">"Life is better under the sea."</h2>
-        <label for="first-name"> Enter your name: <input id="name" type="text" placeholder="Please enter your name" required/></label>
-        <label for="age"> Enter your age: <input id="age" type="number" placeholder="Please enter your age" required/></label>
-        <label for="email"> Enter your email: <input id="email" type="email" placeholder="Please enter an email" required/></label>
-        <label for="message"> Is there anything we need to know?"<textarea name="message" id="message" cols="2" rows="2"></textarea> </label>
-        <select>
-            <option name="divinglevel" class="divinglevel" id="divinglevel"> Level of knowledge</option>
-            <option value="Beginner">Beginner</option>
-            <option value="Open Water Course">Open Water Course</option>
-            <option value="Advanced Open Water">Advanced Open Water</option>
-            <option value="Rescue Diver">Resuce Diver</option>
-            <option value="Divemaster or higher">Divemaster or higher</option>
-        </select>
-        <select>
-            <option name="course" class="divingcourse" id="divingcourse">Which course/dive would you like to book?</option>
-            <option value="Discovery Dive">Discovery Dive</option>
-            <option value="Fun Dive">Fun Dive</option>
-            <option value="Night Dive">Night Dive</option>
-            <option value="Open Water">Open Water Course</option>
-            <option value="Advanced Open Water">Advanced Open Water Course</option>
-            <option value="Rescue Diver">Resuce Diver</option>
-            <option value="Divemaster or higher">Divemaster or higher</option>
-        </select>
-        <label for="password"> Create a new password: <input id="password" type="password" required minlength="8" maxlength="15" placeholder="Please enter a password, length: 8-15 symbols" required/></label>
-        <input type="checkbox">I want to get news about diving: <checkbox></checkbox>
-        <input id="submit-button" type="submit" value="Submit"></input>
+      <h1 class="form-title">Scuba Diving course </h1>
+      <h2 class="info">"Life is better under the sea."</h2>
+          <label for="first-name"> Enter your name: <input id="name" type="text" placeholder="Please enter your name" required/></label>
+          <label for="age"> Enter your age: <input id="age" type="number" placeholder="Please enter your age" required/></label>
+          <label for="email"> Enter your email: <input id="email" type="email" placeholder="Please enter your email" required/></label>
+          <label for="message"> Is there anything we need to know?<textarea name="message" id="message" cols="2" rows="3"></textarea> </label>
+           <select>
+             <option name="divinglevel" class="divinglevel" id="divinglevel"> Level of knowledge</option>
+             <option value="Beginner">Beginner</option>
+             <option value="Open Water Course">Open Water Course</option>
+             <option value="Advanced Open Water">Advanced Open Water</option>
+             <option value="Rescue Diver">Resuce Diver</option>
+             <option value="Divemaster or higher">Divemaster or higher</option>
+          </select>
+          <select>
+             <option name="course" class="divingcourse" id="divingcourse">Which course/dive would you like to book?</option>
+             <option value="Discovery Dive">Discovery Dive</option>
+             <option value="Fun Dive">Fun Dive</option>
+             <option value="Night Dive">Night Dive</option>
+             <option value="Open Water">Open Water Course</option>
+             <option value="Advanced Open Water">Advanced Open Water Course</option>
+             <option value="Rescue Diver">Resuce Diver</option>
+             <option value="Divemaster or higher">Divemaster or higher</option>
+          </select>
+          <label for="password"> Create a new password: <input id="password" type="password" required minlength="8" maxlength="15" placeholder="Please enter a password, length: 8-15 symbols" required/></label>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox-input"> 
+            <label for="checkbox">Check the box to get our monthly newsletter. </label>
+            </div>
+          <input id="submit-button" type="submit" value="Submit"></input>
     </form>
+    <img src="images/diver.jpeg" alt="diver created by AI">
+    
 </main>
 
 
